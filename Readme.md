@@ -66,4 +66,4 @@ RafikiPlus Hub is licensed under the MIT License.
 Contact
 For any inquiries or assistance, please contact our support team at allanlimo02@gmail.com. 
 
-Happy connecting and enjoy RafikiPlus Hub!
+Happy connecting and enjoy RafikiPlus Hub.
