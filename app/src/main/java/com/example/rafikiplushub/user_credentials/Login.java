@@ -33,6 +33,7 @@ public class Login extends AppCompatActivity {
         textViewUsernameError = findViewById(R.id.textViewUsernameError);
         textViewPasswordError = findViewById(R.id.textViewPasswordError);
         Button buttonLogin = findViewById(R.id.buttonLogin);
+        TextView textViewSignUp = findViewById(R.id.textViewSignUp);
 
         // Set onClickListener for the login button
         buttonLogin.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +43,15 @@ public class Login extends AppCompatActivity {
                 validateCredentials();
             }
         });
+        textViewSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Launch SignUpActivity
+                Intent intent = new Intent(Login.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void validateCredentials() {
@@ -79,7 +89,7 @@ public class Login extends AppCompatActivity {
                 public void run() {
                     textViewPasswordError.setVisibility(View.GONE);
                 }
-            }, 5000);
+            }, 2000);
             return;
         }
         Intent i = new Intent(Login.this, MainActivity.class);
