@@ -49,6 +49,7 @@ public class Login extends AppCompatActivity {
                 // Launch SignUpActivity
                 Intent intent = new Intent(Login.this, SignUpActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -95,7 +96,8 @@ public class Login extends AppCompatActivity {
         Intent i = new Intent(Login.this, MainActivity.class);
         startActivity(i);
 
-        // TODO: Add your authentication logic here
+
+        // TODO: Add ygiour authentication logic here
         // For example, you can check the username and password against a database or an authentication service.
 
         // For demonstration purposes, show a toast indicating successful login
